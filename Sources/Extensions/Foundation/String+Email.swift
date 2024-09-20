@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     // Checks if the email is valid just with the minimum rules of:
     // - Contains exactly one @
     // - The string before the @ is not empty

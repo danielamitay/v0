@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension Bundle {
+public extension Bundle {
     var appIcon: UIImage? {
         if let icons = infoDictionary?["CFBundleIcons"] as? [String: Any],
             let primaryIcon = icons["CFBundlePrimaryIcon"] as? [String: Any],

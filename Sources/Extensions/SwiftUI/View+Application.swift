@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension View {
+public extension View {
     func onWillEnterForeground(_ action: @escaping () -> Void) -> some View {
         let publisher = NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)
         return self.onReceive(publisher) { _ in

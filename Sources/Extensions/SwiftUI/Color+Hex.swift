@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension Color {
+public extension Color {
     static func hex(_ hex: Int, alpha: CGFloat = 1) -> Color {
         return Color(uiColor: .hex(hex, alpha: alpha))
     }

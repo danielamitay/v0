@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension View {
+public extension View {
     func onLoad(perform action: @escaping (() -> Void)) -> some View {
         self.modifier(ViewLoadModifier(action: action))
     }

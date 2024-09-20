@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension Color {
+public extension Color {
     static func dynamic(light: Color, dark: Color) -> Color {
         return .init(UIColor.dynamic(light: UIColor(light), dark: UIColor(dark)))
     }

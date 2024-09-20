@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     static func dynamic(light: UIColor, dark: UIColor) -> UIColor {
         return UIColor { trait in
             switch trait.userInterfaceStyle {

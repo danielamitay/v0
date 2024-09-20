@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     static func hex(_ hex: Int, alpha: CGFloat = 1) -> UIColor {
         return UIColor(hex: hex, alpha: alpha)
     }

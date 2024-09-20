@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension TimeInterval {
+public extension TimeInterval {
     static let minute: TimeInterval = 60
     static let hour: TimeInterval = 60 * minute
     static let day: TimeInterval = 24 * hour
