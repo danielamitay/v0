@@ -10,10 +10,15 @@ import SwiftUI
 import WebKit
 
 public struct WebView: View {
-    let urlString: String
-    var initialNavigationTitle: String = "Loading..."
+    public let urlString: String
+    public var initialNavigationTitle: String = "Loading..."
 
     @State private var navigationBarTitle: String = ""
+
+    public init(urlString: String, initialNavigationTitle: String = "Loading...") {
+        self.urlString = urlString
+        self.initialNavigationTitle = initialNavigationTitle
+    }
 
     public var body: some View {
         WebViewRepresentable(

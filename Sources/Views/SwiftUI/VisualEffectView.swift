@@ -9,7 +9,11 @@ import SwiftUI
 import UIKit
 
 public struct VisualEffectView: UIViewRepresentable {
-    let effect: UIVisualEffect
+    public let effect: UIVisualEffect
+
+    public init(effect: UIVisualEffect) {
+        self.effect = effect
+    }
 
     public func makeUIView(context: UIViewRepresentableContext<Self>) -> UIVisualEffectView {
         return UIVisualEffectView()
