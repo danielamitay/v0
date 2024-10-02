@@ -7,7 +7,7 @@
 
 import CoreFoundation
 
-extension Double {
+public extension Double {
     /// Rounds the double to decimal places value
     func rounded(toPlaces places: Int) -> Double {
         let divisor = pow(10.0, Double(places))
@@ -15,7 +15,7 @@ extension Double {
     }
 }
 
-extension CGRect {
+public extension CGRect {
     /// Rounds the CGRect to integer values
     func rounded() -> CGRect {
         return CGRect(
@@ -27,7 +27,7 @@ extension CGRect {
     }
 }
 
-extension CGPoint {
+public extension CGPoint {
     /// Rounds the CGPoint to integer values
     func rounded() -> CGPoint {
         return CGPoint(
@@ -37,7 +37,7 @@ extension CGPoint {
     }
 }
 
-extension CGSize {
+public extension CGSize {
     /// Rounds the CGSize to integer values
     func rounded() -> CGSize {
         return CGSize(
