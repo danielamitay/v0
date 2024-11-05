@@ -8,7 +8,7 @@
 import SwiftUI
 import UIKit
 
-extension Color {
+public extension Color {
     /// Returns the luminance of the color.
     var luminance: Double {
         return UIColor(self).luminance

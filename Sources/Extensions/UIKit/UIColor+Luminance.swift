@@ -7,14 +7,13 @@
 
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     /// Returns the luminance of the color.
     var luminance: CGFloat {
+        // First, try to get RGB components
         var red: CGFloat = 0
         var green: CGFloat = 0
         var blue: CGFloat = 0
-
-        // First, try to get RGB components
         if self.getRed(&red, green: &green, blue: &blue, alpha: nil) {
             return 0.299 * red + 0.587 * green + 0.114 * blue
         }
